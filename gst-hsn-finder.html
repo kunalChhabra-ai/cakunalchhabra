@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GST HSN Code & Rate Finder India | CA Kunal Chhabra</title>
+  <meta name="description" content="Find GST HSN codes and tax rates for any product or service in India. Free HSN code search tool by CA Kunal Chhabra FCA. ICAI compliant informational tool."/>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SVTM0MS1ZX"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-SVTM0MS1ZX');</script>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    :root{--blue:#1a5276;--blue2:#1f618d;--orange:#e67e22;--white:#fff;--cream:#f7fafc;--text:#1a2332;--text2:#4a5568;--border:#e2e8f0;--green:#27ae60;}
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--cream);color:var(--text);}
+    .notice{background:#eaf4fb;border-bottom:1px solid #bee3f8;text-align:center;font-size:0.68rem;color:#2c5f7e;padding:6px 20px;font-weight:500;}
+    nav{background:var(--white);border-bottom:2px solid var(--blue);box-shadow:0 2px 16px rgba(26,82,118,0.08);position:sticky;top:0;z-index:99;}
+    .nav-inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:68px;}
+    .logo-area{display:flex;align-items:center;gap:12px;text-decoration:none;}
+    .logo-area img{height:50px;width:auto;}
+    .n1{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:700;color:var(--blue);}
+    .n2{font-size:0.68rem;color:var(--orange);font-weight:600;text-transform:uppercase;letter-spacing:0.09em;}
+    .nav-right{display:flex;gap:12px;align-items:center;}
+    .nav-link{font-size:0.8rem;color:var(--text2);text-decoration:none;font-weight:500;}
+    .nav-cta{background:var(--blue);color:white;padding:8px 16px;border-radius:7px;font-size:0.8rem;font-weight:700;text-decoration:none;}
+    .hero{background:linear-gradient(135deg,#0d2e4a,#1a5276);padding:44px 0 36px;}
+    .hi{max-width:1200px;margin:0 auto;padding:0 24px;}
+    .hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:700;color:white;margin-bottom:10px;}
+    .hero p{color:rgba(255,255,255,0.6);font-size:0.9rem;line-height:1.7;max-width:600px;}
+    .tool-wrap{max-width:1200px;margin:0 auto;padding:36px 24px;}
+    .tool-card{background:var(--white);border:1.5px solid var(--border);border-radius:16px;padding:32px;margin-bottom:24px;}
+    .tool-card h2{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:700;color:var(--blue);margin-bottom:18px;}
+    .search-row{display:flex;gap:12px;margin-bottom:16px;}
+    .search-row input{flex:1;padding:12px 16px;border:2px solid var(--border);border-radius:8px;font-size:0.9rem;font-family:'Plus Jakarta Sans',sans-serif;outline:none;transition:border-color .2s;}
+    .search-row input:focus{border-color:var(--blue);}
+    .search-row button{background:var(--blue);color:white;border:none;padding:12px 24px;border-radius:8px;font-size:0.88rem;font-weight:700;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;transition:background .2s;white-space:nowrap;}
+    .search-row button:hover{background:var(--orange);}
+    .rate-chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px;}
+    .rate-chip{background:var(--cream);border:1.5px solid var(--border);color:var(--text2);font-size:0.78rem;font-weight:600;padding:6px 14px;border-radius:100px;cursor:pointer;transition:all .2s;}
+    .rate-chip:hover,.rate-chip.active{background:var(--blue);border-color:var(--blue);color:white;}
+    .results-table{width:100%;border-collapse:collapse;font-size:0.85rem;margin-top:16px;}
+    .results-table th{background:var(--blue);color:white;padding:11px 14px;text-align:left;font-weight:600;}
+    .results-table td{padding:10px 14px;border-bottom:1px solid var(--border);color:var(--text2);}
+    .results-table tr:nth-child(even){background:#f7fafc;}
+    .results-table tr:hover{background:#eaf4fb;}
+    .rate-badge{display:inline-block;padding:3px 10px;border-radius:100px;font-size:0.75rem;font-weight:700;}
+    .rate-0{background:#f0faf4;color:var(--green);}
+    .rate-5{background:#fff8e7;color:#e67e22;}
+    .rate-12{background:#fef9e7;color:#d4ac0d;}
+    .rate-18{background:#fdebd0;color:#ca6f1e;}
+    .rate-28{background:#fbe9e7;color:#c0392b;}
+    .no-results{text-align:center;padding:40px;color:var(--text2);}
+    .disclaimer-box{background:#fff8e7;border:1px solid #f0c050;border-radius:10px;padding:16px 20px;margin-top:20px;font-size:0.78rem;color:#7d6608;line-height:1.7;}
+    .cbic-link-box{background:#eaf4fb;border:1.5px solid #bee3f8;border-radius:12px;padding:20px 24px;margin-bottom:24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;}
+    .cbic-link-box p{font-size:0.85rem;color:var(--blue2);line-height:1.6;}
+    .cbic-link-box a{background:var(--blue);color:white;padding:9px 18px;border-radius:7px;font-size:0.82rem;font-weight:700;text-decoration:none;white-space:nowrap;}
+    .cbic-link-box a:hover{background:var(--orange);}
+    .popular-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-top:16px;}
+    .pop-item{background:var(--cream);border:1.5px solid var(--border);border-radius:10px;padding:14px 16px;cursor:pointer;transition:all .2s;}
+    .pop-item:hover{border-color:var(--blue);background:#eaf4fb;}
+    .pop-item .hsn{font-size:1rem;font-weight:700;color:var(--blue);margin-bottom:4px;}
+    .pop-item .desc{font-size:0.75rem;color:var(--text2);}
+    .pop-item .rate{font-size:0.75rem;font-weight:700;color:var(--orange);margin-top:4px;}
+    footer{background:#071320;color:rgba(255,255,255,0.45);padding:32px 0 18px;margin-top:20px;}
+    .fi{max-width:1200px;margin:0 auto;padding:0 24px;}
+    .fbtm{border-top:1px solid rgba(255,255,255,0.07);padding-top:14px;font-size:0.7rem;text-align:center;line-height:1.7;}
+    @media(max-width:600px){.search-row{flex-direction:column;}.nav-link{display:none;}}
+  </style>
+</head>
+<body>
+<div class="notice">⚖️ ICAI Ethics Compliance — Informational tool only. Verify all rates on official CBIC portal before use. Not solicitation of professional work.</div>
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="logo-area">
+      <img src="ca-india-logo.jpg" alt="CA India" onerror="this.style.display='none'"/>
+      <div><div class="n1">CA Kunal Chhabra</div><div class="n2">FCA · Online CA Services</div></div>
+    </a>
+    <div class="nav-right">
+      <a href="index.html" class="nav-link">← Home</a>
+      <a href="company-search.html" class="nav-link">Company Search</a>
+      <a href="index.html#contact" class="nav-cta">Free Consultation</a>
+    </div>
+  </div>
+</nav>
+<div class="hero">
+  <div class="hi">
+    <h1>GST HSN Code & Rate Finder</h1>
+    <p>Search HSN codes and GST rates for goods and services. For authoritative data, always verify on the official CBIC portal.</p>
+  </div>
+</div>
+<div class="tool-wrap">
+
+  <!-- CBIC Official Link -->
+  <div class="cbic-link-box">
+    <p>📋 <strong>Official Source:</strong> All GST rates and HSN codes are maintained by the Central Board of Indirect Taxes & Customs (CBIC). For the most accurate and legally authoritative information, always verify on the official CBIC portal.</p>
+    <a href="https://cbic-gst.gov.in/gst-goods-services-rates.html" target="_blank" rel="noopener">View Official CBIC Portal ↗</a>
+  </div>
+
+  <!-- SEARCH TOOL -->
+  <div class="tool-card">
+    <h2>🔍 Search HSN Code or Product/Service</h2>
+    <div class="search-row">
+      <input type="text" id="hsnSearch" placeholder="e.g. mobile phone, 8517, consulting services, cotton..." onkeyup="if(event.key==='Enter') searchHSN()"/>
+      <button onclick="searchHSN()">Search HSN</button>
+    </div>
+    <div style="margin-bottom:12px;">
+      <span style="font-size:0.75rem;color:var(--text2);font-weight:600;text-transform:uppercase;letter-spacing:0.06em;margin-right:8px;">Filter by Rate:</span>
+      <div class="rate-chips" style="display:inline-flex;">
+        <span class="rate-chip active" onclick="filterRate('all',this)">All Rates</span>
+        <span class="rate-chip" onclick="filterRate('0',this)">0% (Exempt)</span>
+        <span class="rate-chip" onclick="filterRate('5',this)">5%</span>
+        <span class="rate-chip" style="opacity:0.5;cursor:default;" title="12% slab largely abolished in GST rationalisation">12% (Abolished)</span>
+        <span class="rate-chip" onclick="filterRate('18',this)">18%</span>
+        <span class="rate-chip" onclick="filterRate('28',this)">28%</span>
+      </div>
+    </div>
+    
+    <div style="background:#fff3cd;border:1.5px solid #ffc107;border-radius:10px;padding:14px 18px;margin-bottom:16px;font-size:0.8rem;color:#856404;line-height:1.7;">
+      ⚠️ <strong>GST Rate Rationalisation Notice:</strong> The 12% GST slab has been largely abolished following recent GST Council decisions. Most items previously taxed at 12% have been moved to either 5% or 18%. Always verify current rates on the official <a href="https://cbic-gst.gov.in/gst-goods-services-rates.html" target="_blank" style="color:#856404;font-weight:700;">CBIC portal ↗</a> before using for any business or legal purpose.
+    </div>
+    <div id="hsnResults"></div>
+  </div>
+
+  <!-- POPULAR HSN CODES -->
+  <div class="tool-card">
+    <h2>📌 Commonly Searched HSN Codes</h2>
+    <div class="popular-grid" id="popularGrid"></div>
+  </div>
+
+  <!-- DISCLAIMER -->
+  <div class="disclaimer-box">
+    ⚠️ <strong>Important Disclaimer (ICAI Compliance):</strong> This tool provides general reference information about GST HSN codes and rates for educational purposes only. GST rates are subject to change by government notification. The information here may not reflect the latest amendments. Always verify rates on the official CBIC portal (cbic-gst.gov.in) or consult a qualified Chartered Accountant before making any business or legal decisions. CA Kunal Chhabra is not responsible for any decisions made based on this tool.
+  </div>
+
+  <!-- CTA -->
+  <div style="background:linear-gradient(135deg,#eaf4fb,#f0faf4);border:1.5px solid #bee3f8;border-radius:14px;padding:28px;margin-top:24px;text-align:center;">
+    <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:700;color:var(--blue);margin-bottom:8px;">Need Help with GST Registration or Filing?</h3>
+    <p style="font-size:0.85rem;color:var(--text2);margin-bottom:18px;">CA Kunal Chhabra provides expert GST services across India — registration, return filing, notices, and advisory.</p>
+    <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
+      <a href="https://wa.me/919899595719" target="_blank" style="background:#25D366;color:white;padding:10px 22px;border-radius:8px;font-size:0.85rem;font-weight:700;text-decoration:none;">💬 WhatsApp</a>
+      <a href="tel:9899595719" style="background:var(--orange);color:white;padding:10px 22px;border-radius:8px;font-size:0.85rem;font-weight:700;text-decoration:none;">📞 Call Now</a>
+      <a href="index.html#contact" style="background:var(--blue);color:white;padding:10px 22px;border-radius:8px;font-size:0.85rem;font-weight:700;text-decoration:none;">📋 Free Consultation</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="fi">
+    <div class="fbtm">© 2025 CA Kunal Chhabra | Fellow Member — ICAI | This tool is for informational reference only. Always verify on official CBIC portal.</div>
+  </div>
+</footer>
+
+<script>
+// HSN Database (curated common codes)
+const HSN_DB = [
+  {hsn:"0101",desc:"Live horses, asses, mules",rate:0,type:"Goods"},
+  {hsn:"0201",desc:"Meat of bovine animals, fresh/chilled",rate:0,type:"Goods"},
+  {hsn:"0402",desc:"Milk and cream, concentrated or sweetened",rate:5,type:"Goods"},
+  {hsn:"0701",desc:"Potatoes, fresh or chilled",rate:0,type:"Goods"},
+  {hsn:"0901",desc:"Coffee, whether or not roasted",rate:5,type:"Goods"},
+  {hsn:"1001",desc:"Wheat and meslin",rate:0,type:"Goods"},
+  {hsn:"1006",desc:"Rice",rate:5,type:"Goods"},
+  {hsn:"1507",desc:"Soya bean oil",rate:5,type:"Goods"},
+  {hsn:"1701",desc:"Cane or beet sugar",rate:5,type:"Goods"},
+  {hsn:"2101",desc:"Extracts, essences of coffee, tea or mate",rate:18,type:"Goods"},
+  {hsn:"2201",desc:"Waters, including natural/artificial mineral waters",rate:18,type:"Goods"},
+  {hsn:"2202",desc:"Waters with added sugar — Cold drinks",rate:28,type:"Goods"},
+  {hsn:"2402",desc:"Cigars, cheroots, cigarettes of tobacco",rate:28,type:"Goods"},
+  {hsn:"2710",desc:"Petroleum oils, not crude",rate:0,type:"Goods"},
+  {hsn:"3004",desc:"Medicaments for therapeutic/prophylactic use",rate:5,type:"Goods"},
+  {hsn:"3301",desc:"Essential oils",rate:18,type:"Goods"},
+  {hsn:"3401",desc:"Soap; organic surface-active products",rate:18,type:"Goods"},
+  {hsn:"3808",desc:"Insecticides, rodenticides, disinfectants",rate:18,type:"Goods"},
+  {hsn:"3926",desc:"Other articles of plastics",rate:18,type:"Goods"},
+  {hsn:"4016",desc:"Other articles of vulcanised rubber",rate:18,type:"Goods"},
+  {hsn:"4901",desc:"Printed books, brochures, leaflets",rate:0,type:"Goods"},
+  {hsn:"4902",desc:"Newspapers, journals and periodicals",rate:0,type:"Goods"},
+  {hsn:"5001",desc:"Silk-worm cocoons suitable for reeling",rate:5,type:"Goods"},
+  {hsn:"5201",desc:"Cotton, not carded or combed",rate:0,type:"Goods"},
+  {hsn:"5208",desc:"Woven fabrics of cotton, 85%+ by weight",rate:5,type:"Goods"},
+  {hsn:"6101",desc:"Men's overcoats, raincoats — knitted",rate:5,type:"Goods"},
+  {hsn:"6109",desc:"T-shirts, singlets, other vests — knitted",rate:5,type:"Goods"},
+  {hsn:"6203",desc:"Men's suits, ensembles, jackets — woven",rate:18,type:"Goods"},
+  {hsn:"6402",desc:"Other footwear with outer soles of rubber",rate:18,type:"Goods"},
+  {hsn:"7101",desc:"Pearls, natural or cultured",rate:3,type:"Goods"},
+  {hsn:"7102",desc:"Diamonds, worked or unworked",rate:0.25,type:"Goods"},
+  {hsn:"7108",desc:"Gold (including plated) in forms",rate:3,type:"Goods"},
+  {hsn:"7113",desc:"Articles of jewellery of precious metal",rate:3,type:"Goods"},
+  {hsn:"8415",desc:"Air conditioning machines",rate:28,type:"Goods"},
+  {hsn:"8418",desc:"Refrigerators, freezers",rate:18,type:"Goods"},
+  {hsn:"8422",desc:"Dish-washing machines",rate:28,type:"Goods"},
+  {hsn:"8443",desc:"Printing machinery",rate:18,type:"Goods"},
+  {hsn:"8450",desc:"Household type washing machines",rate:28,type:"Goods"},
+  {hsn:"8471",desc:"Automatic data processing machines — Computers",rate:18,type:"Goods"},
+  {hsn:"8473",desc:"Parts of computers and accessories",rate:18,type:"Goods"},
+  {hsn:"8517",desc:"Telephone sets; mobile phones",rate:18,type:"Goods"},
+  {hsn:"8528",desc:"Monitors, projectors, TVs",rate:28,type:"Goods"},
+  {hsn:"8703",desc:"Motor cars and other vehicles for persons",rate:28,type:"Goods"},
+  {hsn:"8711",desc:"Motorcycles",rate:28,type:"Goods"},
+  {hsn:"8802",desc:"Aircraft, spacecraft",rate:5,type:"Goods"},
+  {hsn:"9001",desc:"Optical fibres; optical fibre bundles",rate:18,type:"Goods"},
+  {hsn:"9018",desc:"Instruments used in medical sciences",rate:5,type:"Goods"},
+  {hsn:"9401",desc:"Seats (furniture)",rate:18,type:"Goods"},
+  {hsn:"9403",desc:"Other furniture",rate:18,type:"Goods"},
+  {hsn:"9503",desc:"Tricycles, scooters, toy cars for children",rate:18,type:"Goods"},
+  {hsn:"9506",desc:"Sports goods, gymnasium equipment",rate:18,type:"Goods"},
+  // SAC CODES FOR SERVICES
+  {hsn:"9954",desc:"Construction services — Real estate",rate:5,type:"Service"},
+  {hsn:"9961",desc:"Services in wholesale trade",rate:18,type:"Service"},
+  {hsn:"9962",desc:"Services in retail trade",rate:18,type:"Service"},
+  {hsn:"9971",desc:"Financial and related services",rate:18,type:"Service"},
+  {hsn:"9972",desc:"Real estate services",rate:18,type:"Service"},
+  {hsn:"9973",desc:"Leasing or rental services without operator",rate:18,type:"Service"},
+  {hsn:"9981",desc:"Research and development services",rate:18,type:"Service"},
+  {hsn:"9982",desc:"Legal and accounting services",rate:18,type:"Service"},
+  {hsn:"9983",desc:"Other professional, technical and business services",rate:18,type:"Service"},
+  {hsn:"9984",desc:"Telecommunications, broadcasting, information supply",rate:18,type:"Service"},
+  {hsn:"9985",desc:"Support services — security, cleaning, recruitment",rate:18,type:"Service"},
+  {hsn:"9986",desc:"Agriculture, forestry, fishing support services",rate:0,type:"Service"},
+  {hsn:"9987",desc:"Maintenance and repair services",rate:18,type:"Service"},
+  {hsn:"9988",desc:"Manufacturing services on physical inputs",rate:18,type:"Service"},
+  {hsn:"9991",desc:"Public administration services",rate:0,type:"Service"},
+  {hsn:"9992",desc:"Education services",rate:0,type:"Service"},
+  {hsn:"9993",desc:"Human health and social care services",rate:0,type:"Service"},
+  {hsn:"9994",desc:"Sewage and waste collection services",rate:18,type:"Service"},
+  {hsn:"9995",desc:"Services of membership organisations",rate:18,type:"Service"},
+  {hsn:"9996",desc:"Recreational, cultural and sporting services",rate:18,type:"Service"},
+  {hsn:"9997",desc:"Other services",rate:18,type:"Service"},
+  {hsn:"9998",desc:"Domestic services",rate:0,type:"Service"},
+  {hsn:"9999",desc:"Services provided by extraterritorial organisations",rate:0,type:"Service"},
+];
+
+const POPULAR = [
+  {hsn:"8517",desc:"Mobile Phones",rate:18},
+  {hsn:"8471",desc:"Computers / Laptops",rate:18},
+  {hsn:"9983",desc:"Professional Services",rate:18},
+  {hsn:"9972",desc:"Real Estate Services",rate:18},
+  {hsn:"8703",desc:"Cars / Automobiles",rate:28},
+  {hsn:"3004",desc:"Medicines / Drugs",rate:5},
+  {hsn:"9992",desc:"Education Services",rate:0},
+  {hsn:"9993",desc:"Health / Hospital Services",rate:0},
+  {hsn:"5208",desc:"Cotton Fabric",rate:5},
+  {hsn:"7108",desc:"Gold",rate:3},
+  {hsn:"4901",desc:"Books / Printed Material",rate:0},
+  {hsn:"2202",desc:"Cold Drinks / Aerated",rate:28},
+];
+
+let activeRate = 'all';
+
+function rateClass(r) {
+  if(r===0 || r===0.25) return 'rate-0';
+  if(r<=5) return 'rate-5';
+  if(r<=12) return 'rate-12'; // Note: 12% slab largely abolished
+  if(r<=18) return 'rate-18';
+  return 'rate-28';
+}
+
+function renderRow(item) {
+  return `<tr>
+    <td><strong>${item.hsn}</strong></td>
+    <td>${item.desc}</td>
+    <td>${item.type}</td>
+    <td><span class="rate-badge ${rateClass(item.rate)}">${item.rate}%</span></td>
+  </tr>`;
+}
+
+function searchHSN() {
+  const q = document.getElementById('hsnSearch').value.trim().toLowerCase();
+  if(!q) { document.getElementById('hsnResults').innerHTML = ''; return; }
+  
+  let results = HSN_DB.filter(h => {
+    const matchQ = h.hsn.includes(q) || h.desc.toLowerCase().includes(q);
+    const matchRate = activeRate === 'all' || String(h.rate) === activeRate;
+    return matchQ && matchRate;
+  });
+
+  if(results.length === 0) {
+    document.getElementById('hsnResults').innerHTML = `
+      <div class="no-results">
+        <p>No results found for "<strong>${q}</strong>"</p>
+        <p style="margin-top:8px;font-size:0.82rem;">Try searching on the <a href="https://cbic-gst.gov.in/gst-goods-services-rates.html" target="_blank" style="color:var(--blue);">official CBIC portal ↗</a></p>
+      </div>`;
+    return;
+  }
+
+  document.getElementById('hsnResults').innerHTML = `
+    <p style="font-size:0.78rem;color:var(--text2);margin-bottom:8px;">Found <strong>${results.length}</strong> results — Verify on <a href="https://cbic-gst.gov.in/gst-goods-services-rates.html" target="_blank" style="color:var(--blue);">CBIC portal</a> for official rates</p>
+    <table class="results-table">
+      <thead><tr><th>HSN/SAC</th><th>Description</th><th>Type</th><th>GST Rate</th></tr></thead>
+      <tbody>${results.map(renderRow).join('')}</tbody>
+    </table>`;
+}
+
+function filterRate(rate, btn) {
+  activeRate = rate;
+  document.querySelectorAll('.rate-chip').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  if(document.getElementById('hsnSearch').value.trim()) searchHSN();
+}
+
+// Populate popular
+document.getElementById('popularGrid').innerHTML = POPULAR.map(p => `
+  <div class="pop-item" onclick="document.getElementById('hsnSearch').value='${p.hsn}';searchHSN();">
+    <div class="hsn">${p.hsn}</div>
+    <div class="desc">${p.desc}</div>
+    <div class="rate">GST: ${p.rate}%</div>
+  </div>`).join('');
+
+document.getElementById('hsnSearch').addEventListener('keyup', function(e) {
+  if(e.key === 'Enter') searchHSN();
+});
+</script>
+</body>
+</html>
