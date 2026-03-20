@@ -997,7 +997,7 @@
   if(tt) tt.innerHTML += tt.innerHTML;
 
   // ── POPUP ──
-  let autoTimer = setTimeout(() => openPopup(), 0);
+  let autoTimer = setTimeout(() => openPopup(), 5000);
   function openPopup(){ document.getElementById('popupOv').classList.add('open'); clearTimeout(autoTimer); }
   function closePopup(){ document.getElementById('popupOv').classList.remove('open'); }
   document.getElementById('popupOv').addEventListener('click', e => {

@@ -1,13 +1,4 @@
-<!DOCTYP
-  <!-- Google Ads Tag -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18019927816"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'AW-18019927816');
-  </script>
-  <!-- End Google Ads Tag -->E html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8"/>
@@ -17,15 +8,16 @@
   <link rel="canonical" href="https://cakunalchhabra.com/blogs.html"/>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-SVTM0MS1ZX"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-SVTM0MS1ZX');</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18019927816"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-18019927816');</script>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
   <style>
     :root{--blue:#1a5276;--blue2:#1f618d;--orange:#e67e22;--orange-light:#f0a500;--white:#fff;--cream:#f7fafc;--text:#1a2332;--text2:#4a5568;--border:#e2e8f0;}
     *{margin:0;padding:0;box-sizing:border-box;}
-    html{scroll-behavior:smooth;}
     body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--cream);color:var(--text);}
     .notice{background:#eaf4fb;border-bottom:1px solid #bee3f8;text-align:center;font-size:0.68rem;color:#2c5f7e;padding:6px 20px;font-weight:500;}
-    nav{background:var(--white);border-bottom:2px solid var(--blue);box-shadow:0 2px 16px rgba(26,82,118,0.08);position:sticky;top:0;z-index:999;}
+    nav{background:var(--white);border-bottom:2px solid var(--blue);position:sticky;top:0;z-index:999;box-shadow:0 2px 16px rgba(26,82,118,0.08);}
     .nav-inner{max-width:1260px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:70px;}
     .logo-area{display:flex;align-items:center;gap:12px;text-decoration:none;}
     .logo-area img{height:52px;width:auto;}
@@ -47,7 +39,7 @@
     .controls{background:var(--white);border-bottom:2px solid var(--border);padding:16px 0;position:sticky;top:70px;z-index:98;box-shadow:0 2px 8px rgba(0,0,0,0.04);}
     .ci{max-width:1260px;margin:0 auto;padding:0 24px;}
     .search-wrap{position:relative;margin-bottom:12px;}
-    .search-wrap input{width:100%;padding:12px 44px 12px 44px;border:2px solid var(--border);border-radius:10px;font-size:0.9rem;font-family:'Plus Jakarta Sans',sans-serif;outline:none;transition:border-color .2s;background:var(--cream);}
+    .search-wrap input{width:100%;padding:12px 44px;border:2px solid var(--border);border-radius:10px;font-size:0.9rem;font-family:'Plus Jakarta Sans',sans-serif;outline:none;transition:border-color .2s;background:var(--cream);}
     .search-wrap input:focus{border-color:var(--blue);background:var(--white);}
     .search-wrap input::placeholder{color:#aab5c2;}
     .s-icon{position:absolute;left:14px;top:50%;transform:translateY(-50%);font-size:1rem;pointer-events:none;}
@@ -73,14 +65,14 @@
     .c-body{padding:14px 18px;flex:1;display:flex;flex-direction:column;}
     .c-meta{font-size:0.67rem;color:var(--text2);margin-bottom:7px;}
     .c-excerpt{font-size:0.79rem;color:var(--text2);line-height:1.6;flex:1;}
-    .c-btn{display:inline-block;margin-top:12px;font-size:0.76rem;font-weight:700;color:var(--blue);background:#eaf4fb;padding:6px 12px;border-radius:6px;align-self:flex-start;transition:all .2s;}
+    .c-btn{display:inline-block;margin-top:12px;font-size:0.76rem;font-weight:700;color:var(--blue);background:#eaf4fb;padding:6px 12px;border-radius:6px;transition:all .2s;}
     .card:hover .c-btn{background:var(--blue);color:white;}
     .empty{text-align:center;padding:60px 20px;display:none;}
     .empty h3{font-family:'Cormorant Garamond',serif;font-size:1.4rem;color:var(--blue);margin-bottom:8px;}
     .empty p{color:var(--text2);font-size:0.85rem;margin-bottom:16px;}
     .empty button{background:var(--blue);color:white;border:none;padding:10px 22px;border-radius:8px;font-size:0.85rem;font-weight:700;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;}
     .float-wa{position:fixed;bottom:80px;right:24px;z-index:998;background:#25D366;color:white;padding:11px 18px;border-radius:100px;font-weight:700;font-size:0.81rem;box-shadow:0 6px 28px rgba(37,211,102,0.5);display:flex;align-items:center;gap:7px;font-family:'Plus Jakarta Sans',sans-serif;text-decoration:none;}
-    .float-cta{position:fixed;bottom:24px;right:24px;z-index:998;background:linear-gradient(135deg,var(--orange),var(--orange-light));color:white;border:none;padding:11px 18px;border-radius:100px;font-weight:700;font-size:0.81rem;cursor:pointer;box-shadow:0 6px 28px rgba(230,126,34,0.5);display:flex;align-items:center;gap:7px;font-family:'Plus Jakarta Sans',sans-serif;transition:all .25s;text-decoration:none;}
+    .float-cta{position:fixed;bottom:24px;right:24px;z-index:998;background:linear-gradient(135deg,var(--orange),var(--orange-light));color:white;border:none;padding:11px 18px;border-radius:100px;font-weight:700;font-size:0.81rem;cursor:pointer;box-shadow:0 6px 28px rgba(230,126,34,0.5);font-family:'Plus Jakarta Sans',sans-serif;text-decoration:none;}
     footer{background:#071320;color:rgba(255,255,255,0.45);padding:36px 0 20px;margin-top:20px;}
     .fi{max-width:1260px;margin:0 auto;padding:0 24px;}
     .ft{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;margin-bottom:20px;}
@@ -127,9 +119,9 @@
 <div class="controls">
   <div class="ci">
     <div class="search-wrap">
-      <span class="s-icon">🔍</span>
+      <span class="s-icon">&#128269;</span>
       <input type="text" id="searchInput" placeholder="Search — GST, ITR Filing, Company Registration, Audit..."/>
-      <button class="s-clear" id="searchClear" onclick="clearSearch()">✕ Clear</button>
+      <button class="s-clear" id="searchClear" onclick="clearSearch()">&#10005; Clear</button>
     </div>
     <div class="filter-row">
       <span class="fl-label">Category:</span>
@@ -159,7 +151,7 @@
 
 <div class="blog-main">
   <div class="res-bar">
-    <div class="res-info" id="resInfo">Loading articles...</div>
+    <div class="res-info" id="resInfo">All <strong>215</strong> articles</div>
   </div>
   <div class="grid" id="blogGrid"></div>
   <div class="empty" id="emptyState">
@@ -169,8 +161,8 @@
   </div>
 </div>
 
-<a href="https://wa.me/919899595719" target="_blank" class="float-wa">💬 WhatsApp</a>
-<a href="index.html#contact" class="float-cta">📋 Free Consultation</a>
+<a href="https://wa.me/919899595719" target="_blank" class="float-wa">&#128172; WhatsApp</a>
+<a href="index.html#contact" class="float-cta">&#128203; Free Consultation</a>
 
 <footer>
   <div class="fi">
@@ -187,10 +179,10 @@
         <a href="index.html#services">Services</a>
         <a href="index.html#contact">Contact</a>
         <a href="tel:9899595719">+91 98995 95719</a>
-        <a href="/cdn-cgi/l/email-protection#bddbdedcd6c8d3dcd1ded5d5dcdfcfdcfddad0dcd4d193ded2d0">Email</a>
+        <a href="/cdn-cgi/l/email-protection#a5c3c6c4ced0cbc4c9c6cdcdc4c7d7c4e5c2c8c4ccc98bc6cac8">Email</a>
       </div>
     </div>
-    <div class="fbtm">© 2025 CA Kunal Chhabra | Fellow Member — ICAI | In compliance with ICAI Code of Ethics</div>
+    <div class="fbtm">&#169; 2025 CA Kunal Chhabra | Fellow Member &#8212; ICAI | In compliance with ICAI Code of Ethics</div>
   </div>
 </footer>
 
@@ -406,8 +398,8 @@ const BLOG_REGISTRY = [
   {id:208,file:"/blogs/gst-reverse-charge-mechanism.html",title:"GST Reverse Charge Mechanism (RCM) — Applicability and Compliance | CA Kunal Chhabra",category:"Tax Advisory",date:"March 2025",readTime:"6 min read",excerpt:"Expert guide on GST Reverse Charge Mechanism (RCM) by CA Kunal Chhabra FCA. Practical, actionable advice to help businesses and individuals in India navigate taxation and compliance effectively."},
   {id:209,file:"/blogs/tds-on-property-purchase.html",title:"TDS on Property Purchase in India — Section 194-IA Guide | CA Kunal Chhabra",category:"Tax Advisory",date:"March 2025",readTime:"6 min read",excerpt:"Expert guide on TDS on Property Purchase in India by CA Kunal Chhabra FCA. Practical, actionable advice to help businesses and individuals in India navigate taxation and compliance effectively."},
   {id:210,file:"/blogs/professional-tax-india.html",title:"Professional Tax in India — State-wise Rates and Compliance | CA Kunal Chhabra",category:"Tax Advisory",date:"March 2025",readTime:"6 min read",excerpt:"Expert guide on Professional Tax in India by CA Kunal Chhabra FCA. Practical, actionable advice to help businesses and individuals in India navigate taxation and compliance effectively."},
-  {id:211,file:"/blogs/private-limited-company-registration-india.html",title:"Private Limited Company Registration in India — Complete Guide 2025",category:"Company Registration",date:"March 2025",readTime:"8 min read",excerpt:"Complete guide to register a Private Limited Company in India in 2025. Step-by-step process, documents required, eligibility and post-incorporation compliance by CA Kunal Chhabra FCA."},
-  {id:212,file:"/blogs/opc-one-person-company-registration-india.html",title:"One Person Company (OPC) Registration in India — Complete Guide 2025",category:"Company Registration",date:"March 2025",readTime:"7 min read",excerpt:"Complete guide to One Person Company (OPC) registration in India 2025. Eligibility, benefits, process, documents, nominee requirement and compliance explained by CA Kunal Chhabra."},
+  {id:211,file:"/blogs/private-limited-company-registration-india.html",title:"Private Limited Company Registration in India — Complete Guide",category:"Company Registration",date:"March 2025",readTime:"8 min read",excerpt:"Complete guide to register a Private Limited Company in India. Step-by-step process, documents required, eligibility and post-incorporation compliance by CA Kunal Chhabra FCA."},
+  {id:212,file:"/blogs/opc-one-person-company-registration-india.html",title:"One Person Company (OPC) Registration in India — Complete Guide 2025",category:"Company Registration",date:"March 2025",readTime:"7 min read",excerpt:"Complete guide to One Person Company (OPC) registration in India 2025. Eligibility, benefits, process, documents, nominee requirement and compliance explained."},
   {id:213,file:"/blogs/llp-registration-india.html",title:"LLP Registration in India — Limited Liability Partnership Complete Guide 2025",category:"Company Registration",date:"March 2025",readTime:"8 min read",excerpt:"Complete guide to LLP registration in India 2025. Benefits, eligibility, process, documents, LLP vs Pvt Ltd comparison and annual compliance by CA Kunal Chhabra FCA."},
   {id:214,file:"/blogs/gst-registration-guide-new-business.html",title:"GST Registration for New Business in India — Who Needs It and How to Apply 2025",category:"GST",date:"March 2025",readTime:"7 min read",excerpt:"Complete GST registration guide for new businesses in India 2025. Who needs GST, when to register, documents required, process and common mistakes by CA Kunal Chhabra FCA."},
   {id:215,file:"/blogs/income-tax-return-filing-india.html",title:"Income Tax Return (ITR) Filing in India — Complete Guide for FY 2024-25",category:"Income Tax",date:"March 2025",readTime:"8 min read",excerpt:"Complete guide to Income Tax Return filing in India for FY 2024-25. Which ITR form, documents needed, deadlines, new vs old tax regime and common mistakes by CA Kunal Chhabra FCA."}
@@ -429,8 +421,7 @@ function init() {
   var btnHtml = '';
   for (var j = 0; j < cats.length; j++) {
     var c = cats[j];
-    var isActive = (c === 'All') ? ' active' : '';
-    btnHtml += '<button class="fbtn' + isActive + '" data-cat="' + c + '" onclick="setCat(this)">' + c + '</button>';
+    btnHtml += '<button class="fbtn' + (c === 'All' ? ' active' : '') + '" data-cat="' + c + '" onclick="setCat(this)">' + c + '</button>';
   }
   document.getElementById('catFilters').innerHTML = btnHtml;
 
@@ -476,14 +467,8 @@ function renderCards() {
   for (var i = 0; i < BLOG_REGISTRY.length; i++) {
     var b = BLOG_REGISTRY[i];
     var matchCat = (activeCategory === 'All') || (b.category === activeCategory);
-    var matchCity = !cityVal ||
-      b.title.toLowerCase().indexOf(cityVal.toLowerCase()) > -1 ||
-      b.file.toLowerCase().indexOf(cityVal.toLowerCase()) > -1;
-    var matchSearch = !searchTerm ||
-      b.title.toLowerCase().indexOf(searchTerm) > -1 ||
-      b.excerpt.toLowerCase().indexOf(searchTerm) > -1 ||
-      b.category.toLowerCase().indexOf(searchTerm) > -1 ||
-      b.file.toLowerCase().indexOf(searchTerm) > -1;
+    var matchCity = !cityVal || b.title.toLowerCase().indexOf(cityVal.toLowerCase()) > -1 || b.file.toLowerCase().indexOf(cityVal.toLowerCase()) > -1;
+    var matchSearch = !searchTerm || b.title.toLowerCase().indexOf(searchTerm) > -1 || b.excerpt.toLowerCase().indexOf(searchTerm) > -1 || b.category.toLowerCase().indexOf(searchTerm) > -1;
     if (matchCat && matchCity && matchSearch) filtered.push(b);
   }
 
@@ -514,11 +499,6 @@ function renderCards() {
   for (var k = 0; k < filtered.length; k++) {
     var b = filtered[k];
     html += '<a href="' + b.file + '" class="card">' +
-      '<div class="c-top">' +
-        '<span class="c-cat">' + b.category + '</span>' +
-        '<h2>' + b.title + '</h2>' +
-      '</div>' +
-      '<div class="c-body">' +
-        '<div class="c-meta">\u{1F4C5} ' + b.date + ' \u00A0|\u00A0 \u23F1 ' + b.readTime + '</div>' +
-        '<p class="c-excerpt">' + b.excerpt + '</p>' +
-        '<span class="c-btn">R
+      '<div class="c-top"><span class="c-cat">' + b.category + '</span><h2>' + b.title + '</h2></div>' +
+      '<div class="c-body"><div class="c-meta">&#128197; ' + b.date + ' &nbsp;|&nbsp; &#9201; ' + b.readTime + '</div>' +
+      '<p class="c-excerpt">' + b.excerpt + '</p><span class
